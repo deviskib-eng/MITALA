@@ -1,0 +1,349 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: whitesmoke;
+    color: black;
+    line-height: 1.6;
+}
+
+header {
+    background: white;
+    padding: 12px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: green;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+nav a:hover,
+nav a.active {
+    background: green;
+    color: white;
+}
+
+.btn,
+.add-btn {
+    display: inline-block;
+    background: darkgreen;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn:hover,
+.add-btn:hover {
+    background: darkgreen;
+}
+
+
+.hero {
+    min-height: 420px;
+    background: darkgreen;
+        url("images/hero.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 50px 7%;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 45px;
+    max-width: 600px;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-size: 22px;
+    margin: 15px 0 25px;
+}
+
+.highlights,
+.about {
+    padding: 45px 7%;
+    text-align: center;
+}
+
+.highlights h2,
+.about h2,
+.products-section h2 {
+    color: green;
+    margin-bottom: 25px;
+}
+
+.highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.highlight {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.highlight span {
+    font-size: 35px;
+}
+
+.highlight h3 {
+    color:darkgreen
+}
+
+.about p {
+    max-width: 750px;
+    margin: 10px auto 20px;
+}
+
+
+.page-heading {
+    text-align: center;
+    padding: 45px 15px;
+    background:
+        linear-gradient(rgba(0,60,15,0.65), rgba(0,60,15,0.65)),
+        url("images/hero.jpg") center/cover;
+    color: white;
+}
+
+.page-heading h1 {
+    font-size: 36px;
+}
+
+
+.cart-section {
+    background: white;
+    margin: 20px 5%;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin-left: auto;
+}
+
+.cart-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.cart-section h2,
+.cart-section h3 {
+    color:darkgreen
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.remove-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.products-section {
+    padding: 35px 5%;
+    text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    margin: 8px 0;
+}
+
+.product-card p {
+    color: darkgreen;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.product-card .add-btn {
+    width: 100%;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 30px;
+    padding: 45px 7%;
+}
+
+.contact-info,
+.contact-form {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.contact-info h2,
+.contact-form h2 {
+    color: darkgreen;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin-top: 12px;
+}
+
+.contact-info a {
+    color:green;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid grey;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+.contact-form button {
+    margin-top: 18px;
+}
+
+
+footer {
+    background: darkgreen;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav {
+        gap: 5px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        padding: 7px 10px;
+        font-size: 14px;
+    }
+
+    .hero {
+        min-height: 350px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .highlight-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .cart-section {
+        margin: 15px;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content h1 {
+        font-size: 27px;
+    }
+
+    .logo h2 {
+        font-size: 19px;
+    }
+}
